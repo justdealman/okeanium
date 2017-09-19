@@ -11,6 +11,15 @@
 }
 @font-face {
     font-family:'Gotham Pro';
+    src:url('../fonts/gothampro-medium.eot');
+    src:url('../fonts/gothampro-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gothampro-medium.woff') format('woff'),
+        url('../fonts/gothampro-medium.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face {
+    font-family:'Gotham Pro';
     src:url('../fonts/gothampro-bold.eot');
     src:url('../fonts/gothampro-bold.eot?#iefix') format('embedded-opentype'),
         url('../fonts/gothampro-bold.woff') format('woff'),
@@ -1446,6 +1455,86 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .modal_coach__rc button.bg-orange {
 	background:#f7941d;
 }
+.modal_gift {
+	position:absolute;
+	left:50%;
+	top:30px;
+	z-index:1010;
+	width:768px;
+	color:#000000;
+	padding:39px 56px 15px 71px;
+	margin-left:-384px;
+	background:#c2d5d8;
+	-webkit-box-shadow:4px 4px 0 rgba(0,0,0,0.2);
+	box-shadow:4px 4px 0 rgba(0,0,0,0.2);
+}
+.modal_gift h4 {
+	font-size:33px;
+	line-height:39px;
+	font-weight:500;
+	text-transform:uppercase;
+	padding:0;
+	margin:0 7px 42px;
+}
+.modal_gift p {
+	font-size:22px;
+	line-height:30px;
+	margin:0 7px 30px;
+}
+.modal_gift p strong {
+	font-weight:500;
+}
+.modal_gift p span {
+	display:block;
+	color:#c22842;
+	font-size:33px;
+	line-height:39px;
+	font-weight:500;
+	text-transform:uppercase;
+	margin:17px 0;
+}
+.modal_gift__item {
+	margin:0 0 30px;
+}
+.modal_gift__item label {
+	display:block;
+	font-size:16px;
+	line-height:19px;
+	margin:0 7px 5px;
+}
+.modal_gift__item input {
+	width:100%;
+	color:#000000;
+	font-size:16px;
+	padding:12px 13px 13px;
+	background:#ffffff;
+	border-top:4px solid #dce6ec;
+}
+.modal_gift___controls {
+	position:relative;
+	height:52px;
+	margin:41px 7px 30px;
+}
+.modal_gift___controls button {
+	position:absolute;
+	min-width:277px;
+	color:#ffffff;
+	font-size:17px;
+	line-height:21px;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+	padding:16px 5px 15px;
+}
+.modal_gift___controls .take {
+	left:0;
+	background:#c22842;
+}
+.modal_gift___controls .reject {
+	right:0;
+	background:#6a6d7c;
+}
+
 .schedule--description {
 	font-size:18px;
 	line-height:30px;
@@ -2470,6 +2559,39 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		display:block;
 		width:auto;
 	}
+	.modal_gift {
+		width:640px;
+		padding:30px 40px 10px;
+		margin-left:-320px;
+	}
+	.modal_gift h4 {
+		font-size:28px;
+		line-height:32px;
+		margin:0 0 20px;
+	}
+	.modal_gift p {
+		font-size:18px;
+		line-height:24px;
+		margin:0 0 24px;
+	}
+	.modal_gift p span {
+		font-size:28px;
+		line-height:32px;
+		margin:10px 0;
+	}
+	.modal_gift__item label {
+		margin:0 0 5px;
+	}
+	.modal_gift___controls {
+		height:42px;
+		margin:30px 0 25px;
+	}
+	.modal_gift___controls button {
+		min-width:240px;
+		font-size:14px;
+		line-height:17px;
+		padding:13px 5px 12px;
+	}
 }
 @media all and (min-width:1000px) {
 	.page_custom .nav {
@@ -3178,4 +3300,34 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.request__rc button {
 		width:100%;
 	}
+	.modal {
+		width:290px;
+		margin-left:-145px;
+		padding:18px 15px 10px;
+	}
+	.modal_gift h4 {
+		font-size:17px;
+		line-height:23px;
+		margin:0 0 20px;
+	}
+	.modal_gift p {
+		font-size:15px;
+		line-height:20px;
+		margin:0 0 20px;
+	}
+	.modal_gift p span {
+		font-size:17px;
+		line-height:23px;
+		margin:5px 0;
+	}
+	.modal_gift___controls {
+		height:auto;
+	}
+	.modal_gift___controls button {
+		position:static;
+		display:block;
+		width:100%;
+		margin:0 0 15px;
+	}
+
 }
