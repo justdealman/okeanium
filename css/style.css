@@ -211,7 +211,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 }
 .header__rc {
 	position:absolute;
-	right:21px;
+	right:30px;
 	top:51px;
 }
 .header--button {
@@ -1665,6 +1665,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	position:absolute;
 	left:0;
 	top:50%;
+	top:73px;
 	font-size:16px;
 	line-height:22px;
 	padding:0;
@@ -1684,11 +1685,20 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	height:calc(100% - 46px);
 	background:#ffffff;
 }
+.schedule__row:after {
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:calc(100% - 1px);
+	height:3px;
+	background:#ffffff;
+}
 .schedule__col {
 	position:relative;
 	display:inline-block;
 	width:14.2857%;
-	padding:46px 0 0;
+	padding:46px 0 3px;
 	border-right:3px solid transparent;
 }
 .schedule__col:after {
@@ -1726,13 +1736,25 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	background:linear-gradient(to bottom, rgba(14,29,71,1) 0%,rgba(14,29,71,0.5) 70%,rgba(14,29,71,0.5) 71%,rgba(14,29,71,0) 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
+.schedule__cell {
+	min-height:152px;
+	margin:0 0 -3px;
+	border-top:3px solid #ffffff;
+}
+/*aaaaaa*/
 .schedule__item {
 	position:relative;
 	height:152px;
 	display:block;
-	border-top:3px solid #ffffff;
+	width:calc(100% + 6px);
+	margin:0 0 -3px -3px;
+	border:3px solid #ffffff;
+}
+.schedule__item:first-child {
+	margin-top:-3px;
 }
 .schedule__item:last-child {
+	margin-bottom:-3px;
 	border-bottom:3px solid #ffffff;
 }
 .schedule__item .icon-new {
@@ -1855,6 +1877,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 }
 .offer {
 	position:relative;
+	max-width:1590px;
+	padding:0 30px;
+	margin:-70px auto 0;
 }
 .offer .slick-dots {
 	position:absolute;
@@ -1902,7 +1927,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .offer__row {
 	position:relative;
 	max-width:1530px;
-	height: 360px; 
+	height: auto; 
 	margin:0 auto;
 }
 .offer__text {
@@ -1925,8 +1950,10 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .offer__text p span {
 	color:#c22842;
 }
-.offer__text .link {
-	display:inline-block;
+.offer .link {
+	position:absolute;
+	left:30px;
+	bottom:30px;
 	min-width:263px;
 	font-size:14px;
 	line-height:17px;
@@ -2116,6 +2143,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	right:30px;
 	top:27px;
 	margin:0;
+}
+.schedule-dummy {
+	display:none;
 }
 @media all and (max-width:1590px) {
 	.wrapper {
@@ -2404,15 +2434,8 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		top:auto;
 		bottom:20px;
 	}
-	.schedule__row:after {
-		content:'';
-		position:absolute;
-		right:0;
-		bottom:0;
-		z-index:5;
-		width:3px;
-		height:calc(100% - 46px);
-		background:#ffffff;
+	.schedule__time--item h5 {
+		top:37px;
 	}
 	.schedule__row .slick-prev,
 	.schedule__row .slick-next {
@@ -2515,14 +2538,11 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		top:125px;
 	}
 	.offer {
-		margin:0 0 20px;
-	}
-	.offer__row {
 		max-width:1000px;
-		height:400px;
+		margin:-10px auto 20px;
 	}
 	.offer__text {
-		left:30px;
+		left:0;
 		max-width:460px;
 	}
 	.offer__text p {
@@ -2532,6 +2552,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	}
 	.offer__text .link {
 		margin-top:28px;
+	}
+	.offer .link {
+		left:30px;
 	}
 	.map {
 		height:400px;
@@ -3192,9 +3215,15 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		right:15px;
 		top:135px;
 	}
-	.offer__row {
+	.offer {
 		width:320px;
-		height:240px;
+		padding:0 15px;
+		margin:0 auto 30px;
+	}
+	.offer .item {
+		height:277px !important;
+		background-position:100% 0 !important;
+		background-size:auto 200px !important;
 	}
 	.offer__text {
 		width:200px;
@@ -3206,7 +3235,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		line-height:26px;
 		margin:0 0 10px;
 	}
-	.offer__text .link {
+	.offer .link {
+		left:0;
+		bottom:15px;
 		min-width:0;
 		padding:16px 26px 14px;
 		margin-top:8px;
@@ -3214,7 +3245,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.offer .slick-dots {
 		left:auto;
 		right:50%;
-		bottom:8px;
+		bottom:25px;
 		margin-right:-150px;
 		-webkit-transform:none;
 		transform:none;
