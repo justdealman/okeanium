@@ -232,7 +232,7 @@ $(function() {
 			'top': h+'px'
 		}).addClass('is-active').siblings('[data-target]').removeClass('is-active');
 	});
-	$('[data-target] .modal--close, .fade-bg').on('click', function(e) {
+	$('[data-target] .modal--close, .fade-bg, [data-modal-close]').on('click', function(e) {
 		e.preventDefault();
 		$('[data-target], .fade-bg').removeClass('is-opened');
 		$('[data-open]').removeClass('is-active');
@@ -287,4 +287,9 @@ $(function() {
 		speed: 300
 	});
 	$('input[type="checkbox"]').uniform();
+	setTimeout(function() {
+		if ( !$('[data-target].is-active').length ) {
+			$('.offer-gift').trigger('click');
+		}
+	}, 5000);
 });
