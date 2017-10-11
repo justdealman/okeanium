@@ -1819,7 +1819,10 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .schedule__col.is-today .schedule--head {
 	color:#c22841;
 }
-.schedule__col.is-today .schedule__item:before,
+.schedule__day {
+	position:relative;
+}
+.schedule__col.is-today .schedule__day:before,
 .schedule__col.is-today .banner:before {
 	content:'';
 	position:absolute;
