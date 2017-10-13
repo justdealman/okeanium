@@ -81,7 +81,9 @@ $(function() {
 			$('.schedule__col').find('.schedule__cell:nth-child('+i+')').outerHeight(max);
 			$('.schedule__time').find('.schedule__time--item').eq(i-1).outerHeight(max);
 		}
-		$('.schedule__col:nth-child('+$('.schedule__row').attr('data-today')+')').addClass('is-today');
+		if ( $('.schedule__row').is('[data-today]') ) {
+			$('.schedule__col:nth-child('+$('.schedule__row').attr('data-today')+')').addClass('is-today');	
+		}
 	}
 	if ( $('.schedule-dummy').length ) {
 		generateSchedule();
