@@ -2016,7 +2016,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	font-size:30px;
 	line-height:36px;
 }
-.map {
+#map {
 	height:576px;
 	margin:-67px 0 0;
 	background:#08304b;
@@ -2564,7 +2564,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.offer .link {
 		left:30px;
 	}
-	.map {
+	#map {
 		height:400px;
 		margin:0;
 	}
@@ -3292,7 +3292,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		max-width:290px;
 		margin:40px auto 30px;
 	}
-	.map {
+	#map {
 		height:240px;
 	}
 	.page_custom .content h1 {
