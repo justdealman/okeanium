@@ -1057,10 +1057,14 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	float:right;
 }
 .stock {
+	overflow:hidden;
 	width:1560px;
 	width:calc(100% + 30px);
 	font-size:0;
 	margin:32px 0 -1px -15px;
+}
+.stock_inline {
+	white-space:nowrap;
 }
 .stock a:hover {
 	text-decoration:underline;
@@ -1068,6 +1072,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .stock__item {
 	display:inline-block;
 	width:25%;
+	white-space:normal;
 	padding:0 15px;
 	margin:0 0 45px;
 }
@@ -3033,6 +3038,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.stock {
 		margin-top:-7px;
 		margin-bottom:-11px;
+	}
+	.stock_inline {
+		white-space:normal;
 	}
 	.stock__item {
 		margin:0 0 23px;
