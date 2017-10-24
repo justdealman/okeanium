@@ -226,11 +226,11 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 }
 .header--button_subscription {
 	padding:14px 14px 13px;
-	background:#00a4ff;
+	background:#c22841;
 }
 .header--button_personal {
 	padding:14px 33px 13px;
-	background:#c22841;
+	background:#00a4ff;
 }
 .header--button:after {
 	content:'';
@@ -1848,7 +1848,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .schedule__item .tags i {
 	float:left;
 	display:block;
-	color:#99ff00;
+	color:#0e1d47;
 	font-size:20px;
 	line-height:24px;
 	font-weight:bold;
@@ -1930,7 +1930,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	border:2px solid #ffffff;
 }
 .offer .item {
-	padding:0 30px;
+	padding:0;
 }
 .offer__row {
 	position:relative;
@@ -3041,7 +3041,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	}
 	.stock_inline {
 		white-space:normal;
-	}
+	}	
 	.stock__item {
 		margin:0 0 23px;
 	}
