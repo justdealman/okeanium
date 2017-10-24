@@ -2033,6 +2033,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	color:#0e1d47;
 	font-size:30px;
 	line-height:36px;
+	text-align:center;
 	text-transform:uppercase;
 	padding:0;
 	margin:0 0 49px;
@@ -2065,9 +2066,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	margin:0 0 19px;
 }
 .request__rc {
-	display:inline-block;
-	width:73%;
+	max-width:1140px;
 	text-align:center;
+	margin:0 auto;
 }
 .request__item {
 	display:inline-block;
@@ -2987,8 +2988,8 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		padding:5px 0;
 	}
 	.navigation {
-		width:100%;
-		margin:0 0 31px;
+		width:290px;
+		margin:0 auto 31px;
 	}
 	.navigation li {
 		width:100%;
@@ -3249,17 +3250,22 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	.offer .link {
 		left:0;
 		bottom:15px;
+		width:100%;
 		min-width:0;
 		padding:16px 26px 14px;
 		margin-top:8px;
 	}
 	.offer .slick-dots {
-		left:auto;
-		right:50%;
-		bottom:25px;
-		margin-right:-150px;
+		position:static;
+		font-size:0;
+		text-align:center;
+		margin-right:0;
 		-webkit-transform:none;
 		transform:none;
+	}
+	.offer .slick-dots li {
+		float:none;
+		display:inline-block;
 	}
 	.offer .slick-dots button {
 		width:26px;

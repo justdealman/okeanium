@@ -139,8 +139,14 @@ $(function() {
 		if ( justSwitched ) {
 			if ( device == 'mobile' ) {
 				$('.header, .footer__row').prepend('<span class="menu-open"><i></i>Меню</span>');
+				if ( $('.offer').length ) {
+					$('.navigation').detach().insertAfter('.offer');
+				}
 			} else {
 				$('.menu-open').remove();
+				if ( $('.offer').length ) {
+					$('.navigation').detach().prependTo($('.content').eq(0));
+				}
 			}
 			if ( device !== 'desktop') {
 				if ( $('.gallery').length && $('.text-page__lc') ) {
