@@ -139,12 +139,12 @@ $(function() {
 		if ( justSwitched ) {
 			if ( device == 'mobile' ) {
 				$('.header, .footer__row').prepend('<span class="menu-open"><i></i>Меню</span>');
-				if ( $('.offer').length ) {
-					$('.navigation').detach().insertAfter('.offer');
+				if ( $('.navigation').length ) {
+					$('.navigation').detach().insertBefore('.footer');
 				}
 			} else {
 				$('.menu-open').remove();
-				if ( $('.offer').length ) {
+				if ( $('.navigation').length ) {
 					$('.navigation').detach().prependTo($('.content').eq(0));
 				}
 			}

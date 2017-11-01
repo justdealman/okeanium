@@ -328,7 +328,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .introduction .slick-dots {
 	position:absolute;
 	left:40px;
-	bottom:33px;
+	bottom:15px;
 	z-index:10;
 	margin:0;
 }
@@ -558,6 +558,14 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	text-transform:uppercase;
 	vertical-align:middle;
 }
+.item-list__partner p span {
+	display:block;
+	font-size:13px;
+	line-height:16px;
+	font-weight:normal;
+	text-transform:none;
+	margin:16px 0 0;
+}
 .item-list__coach {
 	position:relative;
 	display:block;
@@ -770,7 +778,10 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	background:#d0dce6;
 	-webkit-border-radius:2px;
 	border-radius:2px;
+	-webkit-transition:all 0.2s ease;
+	transition:all 0.2s ease;
 }
+.navigation a:hover,
 .navigation .special {
 	color:#ffffff;
 	background:#c22841;
@@ -2790,11 +2801,15 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	}
 	.item-card h5 {
 		position:static;
-		text-align:left;
-		padding:11px 15px;
+		color:#0674be;
+		line-height:22px;
+		text-align:center;
+		padding:9px 9px 10px;
+		background:#d0dce6;
 	}
 	.item-card:hover h5 {
-		padding-right:15px;
+		padding-right:9px;
+		background:#c22841;
 	}
 	.catalog-grid--item_wide {
 		width:100%;
@@ -3376,5 +3391,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 		width:100%;
 		margin:0 0 15px;
 	}
-
+	.request {
+		margin:0 0 30px;
+	}
 }
