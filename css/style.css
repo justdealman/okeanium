@@ -716,6 +716,9 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 .footer--social .in-icon {
 	background-image:url('../img/in-icon.png');
 }
+.footer--social .send-icon {
+	background-image:url('../img/send-icon.png');
+}
 .footer--nav {
 	position:absolute;
 	right:-12px;
