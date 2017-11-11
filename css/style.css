@@ -2020,6 +2020,7 @@ div.checker,div.radio{position:relative}div.checker,div.checker input,div.checke
 	font-weight:bold;
 	text-align:center;
 	text-transform:uppercase;
+	cursor:pointer;
 	padding:16px 16px 14px;
 	margin:53px auto 18px;
 	background:#c22842;

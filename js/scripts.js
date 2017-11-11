@@ -332,4 +332,11 @@ $(function() {
 		e.preventDefault();
 		$('.offer-gift').trigger('click');	
 	});
+	$('[data-scroll-link]').on('click', function(e) {
+		e.preventDefault();
+		var t = $('[data-scroll-target="'+$(this).attr('data-scroll-link')+'"]');
+		$('html, body').stop().animate({
+			scrollTop: t.offset().top
+		});
+	});
 });
