@@ -152,15 +152,9 @@ $(function() {
 				if ( $('.gallery').length && $('.text-page__lc') ) {
 					$('.gallery').detach().insertAfter($('.text-page__lc'));
 				}
-				if ( $('.navigation').length && $('.introduction').length ) {
-					$('.navigation').detach().insertAfter($('.introduction'));
-				}
 			} else {
 				if ( $('.gallery').length && $('.text-page__lc') ) {
 					$('.gallery').detach().insertAfter($('.text-page'));
-				}
-				if ( $('.navigation').length && $('.introduction').length ) {
-					$('.navigation').detach().insertBefore($('.introduction'));
 				}
 			}
 		}
