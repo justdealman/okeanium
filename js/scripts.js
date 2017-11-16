@@ -327,11 +327,11 @@ $(function() {
 		cssEase: 'ease',
 		speed: 300
 	});
-	$('input[type="checkbox"]').uniform();
+	$('input[type="checkbox"]').uniform();/*
 	$('body').one('click', function(e) {
 		e.preventDefault();
 		$('.offer-gift').trigger('click');	
-	});
+	});*/
 	$('[data-scroll-link]').on('click', function(e) {
 		e.preventDefault();
 		var t = $('[data-scroll-target="'+$(this).attr('data-scroll-link')+'"]');
